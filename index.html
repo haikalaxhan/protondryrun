@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Security Awareness — Petron Dry Run</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    background: #f3f2f1;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.container { max-width: 640px; width: 100%; }
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 48px 40px;
+}
+.badge {
+    display: inline-block;
+    background: #d83b01;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+}
+h1 { font-size: 28px; color: #201f1e; margin-bottom: 12px; font-weight: 600; }
+.subtitle { font-size: 15px; color: #605e5c; margin-bottom: 24px; line-height: 1.5; }
+.section { margin-top: 24px; }
+.section h2 { font-size: 16px; color: #201f1e; margin-bottom: 8px; font-weight: 600; }
+.section p { font-size: 14px; color: #323130; line-height: 1.6; }
+ul { margin-top: 8px; padding-left: 20px; }
+li { font-size: 14px; color: #323130; line-height: 1.8; }
+li code { background: #f3f2f1; padding: 2px 6px; border-radius: 3px; font-family: Consolas, monospace; font-size: 13px; }
+.footer {
+    margin-top: 32px;
+    padding-top: 20px;
+    border-top: 1px solid #edebe9;
+    font-size: 12px;
+    color: #605e5c;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <span class="badge">Authorized Phishing Simulation</span>
+        <h1>This was a phishing test</h1>
+        <p class="subtitle">You have been targeted as part of an authorized security awareness exercise conducted by the IT Security team.</p>
+
+        <div class="section">
+            <h2>What happened?</h2>
+            <p>You received a simulated phishing email that mimicked a Microsoft account security alert. The link in that email led you to a credential harvesting page designed to look like a legitimate Office 365 sign-in screen.</p>
+        </div>
+
+        <div class="section">
+            <h2>What should you do next time?</h2>
+            <ul>
+                <li>Check the sender's full email address, not just the display name</li>
+                <li>Hover over links before clicking — verify they point to a legitimate domain</li>
+                <li>Look for urgency cues like <code>"verify now"</code> or <code>"your account will be locked"</code></li>
+                <li>Report suspicious emails to <code>security@yourdomain.com</code></li>
+                <li>Never enter credentials from a link in an email — navigate to the site directly</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Red flags you might have missed</h2>
+            <ul>
+                <li>Generic greeting instead of your name</li>
+                <li>Suspicious sender domain (<code>@netwitz.com.my</code> is not a Microsoft domain)</li>
+                <li>URL pointed to <code>login.haikalaxhan.site</code> instead of <code>microsoft.com</code></li>
+                <li>Created sense of urgency and fear</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            This page is part of an authorized phishing simulation. No credentials have been retained. If you have questions, contact the IT Security team.
+        </div>
+    </div>
+</div>
+</body>
+</html>
